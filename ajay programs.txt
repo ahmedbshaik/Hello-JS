@@ -1,0 +1,40 @@
+//age finder
+
+let myName = 'Basheer';
+let myAge = 18
+
+if (myAge >= 18){
+
+console.log(myName + ", You are an Adult");
+}
+else {
+console.log(myName + ", You are an Youth");
+}
+
+-------------------------------------
+
+// Program to check age group
+
+let myAge=13;
+
+if(myAge >= 1 && myAge <=12) {
+
+console.log('Child');
+}
+
+else if(myAge > 12 && myAge <=19) {
+
+console.log('Teenager');
+}
+
+else if(myAge > 19 && myAge <=64) {
+
+console.log('Adult');
+}
+
+else {
+
+console.log("Pensionist");
+}
+
+----------------------------

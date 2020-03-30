@@ -1,0 +1,48 @@
+let logInName=prompt("Who is there?", '');
+
+if (logInName == 'Admin'){
+  let password=prompt('Password?', '');
+
+if(password == 'TheMaster'){
+
+ alert('Welcome!');
+}
+else if(password == '' || password == null) {
+  alert('Cancelled');
+}
+  else {
+  alert("Wrong Password");
+}
+}else if (logInName == '' || logInName == null){
+  alert('Cancelled');
+}
+  else{
+    alert("I don't know you!");
+  }
+
+
+------------------
+Or this way
+--------------------
+
+let logInName=prompt("Who is there?", '');
+
+if (logInName == 'Admin'){
+  let password=prompt('Password?', '');
+
+if(password == 'TheMaster'){
+
+ alert('Welcome!');
+}
+else if(!password) {
+  alert('Cancelled');
+}
+  else {
+  alert("Wrong Password");
+}
+}else if (!logInName){
+  alert('Cancelled');
+}
+  else{
+    alert("I don't know you!");
+  }

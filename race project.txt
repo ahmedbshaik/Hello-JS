@@ -1,0 +1,59 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+
+let registeredEarly = false;
+
+let registeredLate = !registeredEarly
+
+let runnersAge = 18;
+
+if(runnersAge > 18 && registeredEarly) {
+  registeredEarly = 1000 + raceNumber; 
+  console.log("You registered early and your Race Number is: " + registeredEarly + "  and your race starts at: 9:30 AM ");
+}
+
+else if(runnersAge > 18 && registeredEarly === false){
+  registeredLate = raceNumber
+  console.log("You registered late and your Race Number is: " + registeredLate + " and your race starts at: 11:00 AM");
+}
+
+else if( runnersAge < 18) {
+  console.log('Youth registrants run at 12:30 pm (regardless of registration)');
+}
+
+else {
+  console.log("You are advised to see the registration desk");
+}
+
+-----
+prompt based ...
+
+-----
+let raceNumber = Math.floor(Math.random() * 1000);
+
+let myName = prompt("What is your name?", '');
+
+let registrationTime = prompt("Did you registered early? Please choose 'Yes' if you arrived before 9 AM or 'No' ", '');
+
+registrationTime = (registrationTime .toLowerCase());
+
+console.log(registrationTime)
+
+let myAge = prompt("What is your age?",'');
+
+
+if(myAge > 18 && registrationTime === 'yes') {
+  raceNumber = 1000 + raceNumber; 
+  alert("Welcome " + myName + "!" + "You registered early, your Race Number is: " + raceNumber+ "  and your race starts at: 9:30 AM ");
+}
+
+else if(myAge > 18 && registrationTime === 'no'){
+  alert("Welcome " + myName + "!" + "You registered late, your Race Number is: " + raceNumber+ "  and your race starts at: 11:00 AM ");
+}
+
+else if( myAge < 18) {
+  alert('Youth registrants run at 12:30 pm (regardless of registration)');
+}
+
+else {
+  alert("You are advised to see the registration desk");
+}

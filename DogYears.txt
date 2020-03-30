@@ -1,0 +1,51 @@
+const myAge = 40; //variable declarion for HumanAge
+
+console.log('My age: ' + myAge + ' (before calculations)');
+
+let earlyYears = 2; // variable declaration for 1st two years of the dog age
+
+earlyYears = 10.5 * earlyYears;
+
+console.log('My 1st two years: ' + earlyYears );
+
+let laterYears = myAge - 2; //1st two years has already been accounted so storing correct value in new variable
+
+console.log('Remaining years after minus two years: ' + laterYears );
+let laterYears1 = laterYears;
+laterYears = laterYears * 4; // Multiplying dog years with 4
+
+console.log('earlyYears: '+earlyYears+' '+'laterYears: '+laterYears + ' (' + laterYears1 + ' x 4)');
+
+let myAgeInDogYears = earlyYears + laterYears; // adding 1st two years with remain years
+
+let myName = 'BASHEER'.toLowerCase(); //Storing my name in lower case letters
+
+console.log("My Name is " + myName + " I am " + myAge + " years old in human years which is " + myAgeInDogYears + " years old in dog years.");
+
+----------------
+Prompt method
+---------------
+let myName = prompt( "What is your name?",'');
+const myAge = prompt("How old are you?",''); //variable declarion for HumanAge
+
+alert('My age: ' + myAge + ' (before calculations)');
+
+let earlyYears = 2; // variable declaration for 1st two years of the dog age
+
+earlyYears = 10.5 * earlyYears;
+
+alert('My 1st two years: ' + earlyYears );
+
+let laterYears = myAge - 2; //1st two years has already been accounted so storing correct value in new variable
+
+alert('Remaining years after minus two years: ' + laterYears );
+let laterYears1 = laterYears;
+laterYears = laterYears * 4; // Multiplying dog years with 4
+
+console.log('earlyYears: '+earlyYears+' '+'laterYears: '+laterYears + ' (' + laterYears1 + ' x 4)');
+
+let myAgeInDogYears = earlyYears + laterYears; // adding 1st two years with remain years
+
+myName = (myName.toLowerCase()); //Storing my name in lower case letters
+
+alert("My Name is " + myName + " I am " + myAge + " years old in human years which is " + myAgeInDogYears + " years old in dog years.");

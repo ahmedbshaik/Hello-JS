@@ -1,0 +1,36 @@
+const kelvin = 293; //variable declaration Kelvin
+
+const celsius = kelvin-273; //Variable declaration celsius
+
+let fahrenheit = celsius * (9/5) + 32; //conversion formula celsius to fahrenheit
+
+ fahrenheit = Math.floor(fahrenheit); // Rounding down to whole number
+
+console.log("The temperature is" + ' ' + fahrenheit + ' ' + "degrees Fahrenheit.");
+
+let newton = celsius * (33/100);
+
+newton =Math.floor(newton);
+
+console.log("The temperature is"+ ' ' + newton + ' ' + "Newton degrees.");
+
+------------------
+Using prompt and alert method
+
+----------------
+
+const kelvin = prompt("Enter Temperature in Kelvin?"); //variable declaration Kelvin
+
+const celsius = kelvin-273; //Variable declaration celsius
+
+let fahrenheit = celsius * (9/5) + 32; //conversion formula celsius to fahrenheit
+
+ fahrenheit = Math.floor(fahrenheit); // Rounding down to whole number
+
+alert("The temperature is" + ' ' + fahrenheit + ' ' + "degrees Fahrenheit.");
+
+let newton = celsius * (33/100);
+
+newton =Math.floor(newton);
+
+alert("The temperature is"+ ' ' + newton + ' ' + "Newton degrees.");
